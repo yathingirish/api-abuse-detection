@@ -1,0 +1,46 @@
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+mp.env
+secrets/
+*.pem
+*.key
+
+# Generated data
+data/*
+!data/.gitkeep
+*.jsonl
+*.csv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.bak
+
+# macOS
+.DS_Store
+
+# Editors
+.agents/
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+EOF
